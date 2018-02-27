@@ -12,11 +12,33 @@
     percentPosition: true
   });
 
+  // window resize
+  var resizeTimer;
+
+  window.addEventListener('resize', function() {
+    var windowWidth = window.innerWidth;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      var msnryData = Masonry.data('.grid');
+      if (windowWidth < 720) {
+
+        if(msnryData) {
+          msnry.destroy();
+        }
+      } else if (windowWidth >= 720 && !msnryData ) {
+        msnry = new Masonry(elem, {
+          // options
+          itemSelector: '.item',
+          columnWidth: '.sizer',
+          percentPosition: true
+        });
+      }
+    }, 250);
+  });
+
   // imagesLoaded
   window.onload = function () {
     var container = document.querySelectorAll('.grid img');
-    console.log(container);
-
     [].forEach.call(container, function (temp) {
       var img = new Image();
       img.src = temp.currentSrc;
