@@ -32,6 +32,8 @@
   border-radius: $radius;
   border-style: solid;
   border-width: $border-width;
+  color: darken($text-fill, 25%);
+  font-family: $sans;
   outline: none !important;
   text-indent: $gutter / 2;
   transition: $default-transtion;
