@@ -1,0 +1,118 @@
+.header {
+  margin: $gutter 0;
+
+  @include respond-to(xsmall) {
+  }
+
+  @include respond-to(medium) {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    background: $header-background;
+    margin: 0;
+    padding: $gutter 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+  & + .content {
+    @include respond-to(medium) {
+      margin-top: 130px;
+    }
+  }
+
+  .logo {
+    order: 1;
+    line-height: 0;
+    text-align: center;
+
+    @include respond-to(medium) {
+      flex: 0 0 auto;
+      order: 0;
+      width: auto;
+    }
+
+    img {
+      width: 140px;
+
+      @include respond-to(xsmall) {
+        width: 195px;
+      }
+
+      @include respond-to(medium) {
+        width: 155px;
+      }
+    }
+  }
+
+  .menu {
+    margin: 0;
+    order: 0;
+
+    nav {
+      display: none;
+    }
+  }
+
+  .search {
+    order: 2;
+    position: relative;
+
+    input {
+      display: none;
+    }
+
+    &:hover {
+      .field {
+        border-color: $field-fill-border-hover;
+      }
+    }
+
+    @include respond-to(medium) {
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%;
+      min-height: 1px;
+      padding-left: $gutter / 2;
+      padding-right: $gutter / 2;
+
+      .field {
+        display: block;
+        height: 35px;
+        padding-right: 40px;
+        width: 100%;
+      }
+
+      .btn {
+        background: transparent;
+        border: none;
+        position: absolute;
+        right: $gutter / 2;
+        top: 2px;
+      }
+    }
+
+    @include respond-to(desktop) {
+      margin: 0 5%;
+    }
+
+    @include respond-to(large) {
+      margin: 0 10%;
+    }
+  }
+
+  .user {
+    display: none;
+    order: 3;
+
+    @include respond-to(medium) {
+      display: block;
+    }
+
+    img {
+      margin-right: $gutter / 2;
+      height: 50px;
+      vertical-align: middle;
+    }
+  }
+}

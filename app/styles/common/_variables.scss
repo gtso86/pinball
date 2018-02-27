@@ -1,0 +1,49 @@
+// Colors
+$white: #FFF;
+$gray: #F0EFEE;
+$dark-gray: #BBB;
+$black: #000;
+
+// Fonts
+$sans: 'Open Sans', sans-serif;
+
+// Screen breakpoints
+$breakpoints-sizes: (
+  'xsmall' : 400px,
+  'small'  : 640px,
+  'medium' : 720px,
+  'desktop' : 960px,
+  'large'  : 1200px,
+  'xlarge' : 1440px
+);
+
+$breakpoints: (
+  'xsmall'  : ( min-width:  #{inspect(map-get($breakpoints-sizes, xsmall))} ),
+  'small'   : ( min-width:  #{inspect(map-get($breakpoints-sizes, small))} ),
+  'medium'  : ( min-width:  #{inspect(map-get($breakpoints-sizes, medium))} ),
+  'desktop' : ( min-width:  #{inspect(map-get($breakpoints-sizes, desktop))} ),
+  'large'   : ( min-width:  #{inspect(map-get($breakpoints-sizes, large))} ),
+  'xlarge'  : ( min-width: #{inspect(map-get($breakpoints-sizes, xlarge))} )
+);
+
+// Layouts sizes
+$gutter: 20px;
+$radius: 5px;
+$border-width: 1px;
+
+// Element pallete
+$header-background: $white;
+
+$body-background: $gray;
+$text-fill: $dark-gray;
+
+$button-fill: $text-fill;
+$button-fill-hover: darken($button-fill, 50%);
+$button-border-fill: rgb(231, 231, 231);
+$button-border-fill-hover: rgb(200, 200, 200);
+$field-fill: $gray;
+$field-fill-border: $button-border-fill;
+$field-fill-border-hover: $button-border-fill-hover;
+
+// Animations
+$default-transtion: all .25s ease;
