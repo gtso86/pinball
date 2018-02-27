@@ -3,6 +3,8 @@ $white: #FFF;
 $gray: #F0EFEE;
 $dark-gray: #BBB;
 $black: #000;
+$green: #B9CB41;
+
 
 // Fonts
 $sans: 'Open Sans', sans-serif;
@@ -44,6 +46,11 @@ $button-border-fill-hover: rgb(200, 200, 200);
 $field-fill: $gray;
 $field-fill-border: $button-border-fill;
 $field-fill-border-hover: $button-border-fill-hover;
+
+$item-background: $white;
+
+$star-fill: $green;
+$star-background: darken($gray, 10%);
 
 // Animations
 $default-transtion: all .25s ease;

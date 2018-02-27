@@ -26,7 +26,7 @@ a {
   text-decoration-color: transparent;
   transition: $default-transtion;
 
-  &:hover {
+  &.underline:hover {
     color: darken($text-fill, 50%);
     text-decoration-color: darken($text-fill, 50%);
   }

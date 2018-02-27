@@ -114,22 +114,24 @@
 }
 
 // Grid list
-.grid {
-  background: cyan;
+//
+// remove all coments below to enable debug background
+// .grid {
+//   background: cyan;
 
-  @include respond-to(xsmall) {
-    background: darkcyan;
-  }
-  @include respond-to(small) {
-    background: yellow;
-  }
-  @include respond-to(medium) {
-    background: green;
-  }
-  @include respond-to(large) {
-    background: orange;
-  }
-  @include respond-to(xlarge) {
-    background: red;
-  }
-}
+//   @include respond-to(xsmall) {
+//     background: darkcyan;
+//   }
+//   @include respond-to(small) {
+//     background: yellow;
+//   }
+//   @include respond-to(medium) {
+//     background: green;
+//   }
+//   @include respond-to(large) {
+//     background: orange;
+//   }
+//   @include respond-to(xlarge) {
+//     background: red;
+//   }
+// }
