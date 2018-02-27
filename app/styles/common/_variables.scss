@@ -1,0 +1,21 @@
+// Colors
+$white: #FFF;
+$gray: #F0EFEE;
+$black: #000;
+
+// Fonts
+$sans: 'Open Sans', sans-serif;
+
+// Screen breakpoints
+$breakpoints: (
+  'xsmall'  : ( min-width:  400px ),
+  'small'  : ( min-width:  640px ),
+  'medium' : ( min-width:  720px ),
+  'large' : ( min-width:  1200px ),
+  'xlarge'  : ( min-width: 1440px )
+);
+
+// Element pallete
+$header-background: $white;
+
+$body-background: $gray;
