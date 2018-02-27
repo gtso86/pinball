@@ -3,12 +3,12 @@
   .item {
     background: $item-background;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-    border-radius: $radius / 2;
-    flex-basis: inherit;
-    flex-grow: inherit;
+    border-radius: 3px;
+    // flex-basis: inherit;
+    // flex-grow: inherit;
     margin-bottom: $gutter;
-    margin-left: $gutter / 2;
-    margin-right: $gutter / 2;
+    // margin-left: $gutter / 2;
+    // margin-right: $gutter / 2;
     max-width: 600px;
     min-height: 1px;
     overflow: hidden;
@@ -24,6 +24,7 @@
         position: relative;
         transition: $default-transtion;
         transition-duration: .5s;
+        transform: translateZ(0);
       }
     }
 
@@ -136,7 +137,6 @@
     }
 
     .share {
-      display: inline-block;
       float: right;
 
       .bubble {
@@ -172,7 +172,6 @@
     }
 
     @include respond-to(medium) {
-      width: 50%;
     }
 
     &:hover {
@@ -180,6 +179,7 @@
       figure {
         img {
           transform: scale(1.05);
+          // filter: opacity(.5);
         }
       }
     }
