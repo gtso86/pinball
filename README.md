@@ -39,5 +39,26 @@ A seguir, instale as dependências para rodar o projeto:
 $ npm install
 ```
 
-Pronto! You should now have everything needed to use the Web Starter Kit.
 Pronto! Agora você já tem tudo para rodar a aplicação localmente.
+
+
+# Comandos
+
+Existem uma série de comandos para compilar ou testar a apicação:
+
+### Observar arquivos
+
+```sh
+$ gulp serve
+```
+
+Isso criará um servidor local com um IP para acessar a aplicação, permitindo verificar toda alteração nos arquivos diretamente no browser.
+
+
+### Compilar aplicação
+
+```sh
+$ gulp
+```
+
+Compila e otimiza os assets do projeto, deixando-o pronto para implantação.
