@@ -22,7 +22,7 @@
       img.src = temp.currentSrc;
 
       img.onload = function () {
-        temp.classList.add('loaded');
+        temp.parentNode.closest('.item').classList.add('loaded');
         msnry.layout();
       };
     });

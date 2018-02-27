@@ -180,6 +180,16 @@
   &.grid-masonry {
     margin: 0 (($gutter / 2) * -1);
 
+    .item {
+      filter: opacity(0);
+      transition: $default-transtion;
+      transition-delay: .5s;
+    }
+
+    .loaded {
+      filter: opacity(1);
+    }
+
     .item,
     .sizer {
       float: left;
