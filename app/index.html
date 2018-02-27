@@ -1,102 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pinball | The grid theme</title>
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pinball | The grid theme</title>
 
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Web Starter Kit">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#2F3BA2">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
 
-    <!-- Your styles -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-    <!-- Add your site or app content here -->
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          header
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!-- Your styles -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <!-- Add your site or app content here -->
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center">
           <hgroup class="sr-only">
             <h1>Pinball</h1>
             <h2>The grid theme</h2>
           </hgroup>
 
-          <div class="logo">
+          <div class="logo col">
             <img srcset="images/logo.png,
-                         images/logo@2x.png 2x" src="images/logo.png" alt="Elva dressed as a fairy">
+                          images/logo@2x.png 2x" src="images/logo.png" class="img-fluid">
           </div>
 
-          <menu>
-            <button>toggle menu</button>
+          <menu class="menu col-auto">
+            <button class="btn">
+              <span class="sr-only">Toggle Menu</span>
+
+              <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 38.857 38.857">
+                <path id="Rounded_Rectangle_1_copy_2" data-name="Rounded Rectangle 1 copy 2" class="cls-1" d="M77.1,92.675h35.8a1.81,1.81,0,0,1,1.884,1.727v1.152a1.81,1.81,0,0,1-1.884,1.727H77.1a1.811,1.811,0,0,1-1.884-1.727V94.4A1.811,1.811,0,0,1,77.1,92.675Z"
+                  transform="translate(-75.571 -64.837)" />
+                <path id="Rounded_Rectangle_1_copy_3" data-name="Rounded Rectangle 1 copy 3" class="cls-1" d="M77.1,81.956h35.8a1.811,1.811,0,0,1,1.884,1.727v1.152a1.811,1.811,0,0,1-1.884,1.727H77.1a1.811,1.811,0,0,1-1.884-1.727V83.683A1.811,1.811,0,0,1,77.1,81.956Z"
+                  transform="translate(-75.571 -64.837)" />
+                <path id="Rounded_Rectangle_1_copy_4" data-name="Rounded Rectangle 1 copy 4" class="cls-1" d="M77.1,71.237h35.8a1.811,1.811,0,0,1,1.884,1.728v1.152a1.81,1.81,0,0,1-1.884,1.727H77.1a1.811,1.811,0,0,1-1.884-1.727V72.965A1.811,1.811,0,0,1,77.1,71.237Z"
+                  transform="translate(-75.571 -64.837)" />
+              </svg>
+            </button>
+
             <nav>navbar</nav>
           </menu>
 
-          <form class="search">
+          <form class="search col-auto">
             <label>
               <input type="search" />
-              <button type="submit">Submit</button>
+              <button class="btn" type="submit">
+                <span class="sr-only">Search</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="33.031" height="33.031" viewBox="0 0 33.031 33.031">
+                  <path class="cls-1" d="M534.272,99.308l-0.966.965a2.486,2.486,0,0,1-3.513,0L523.716,94.2a14.175,14.175,0,1,1,4.486-4.468l6.07,6.064A2.48,2.48,0,0,1,534.272,99.308Zm-18.08-27.384a10.255,10.255,0,1,0,10.264,10.255A10.259,10.259,0,0,0,516.192,71.924Z"
+                    transform="translate(-502 -68)" />
+                </svg>
+              </button>
             </label>
           </form>
 
-          <div class="user">
+          <div class="user col">
             Welcome John
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <section class="content">
-        <main class="container">
-          main
-          <div class="grid grid-masonry">
-            <article>1</article>
-            <article>2</article>
-            <article>...</article>
-            <article>10</article>
-          </div>
+    <section class="content">
+      <main class="container">
+        main
+        <div class="grid grid-masonry">
+          <article>1</article>
+          <article>2</article>
+          <article>...</article>
+          <article>10</article>
+        </div>
 
-          <footer>Page Loading</footer>
-        </main>
-      </section>
-    </div>
+        <footer>Page Loading</footer>
+      </main>
+    </section>
+  </div>
 
-    <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+  <!-- build:js scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <!-- Built with love using Web Starter Kit -->
-  </body>
 </html>

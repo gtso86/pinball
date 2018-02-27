@@ -1,7 +1,53 @@
 .header {
-  background: red;
+  margin: $gutter 0;
+
+  @include respond-to(xsmall) {
+  }
+
+  @include respond-to(medium) {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    background: $header-background;
+    margin: 0;
+    padding: $gutter 0;
+  }
 
   .logo {
+    order: 1;
+    line-height: 0;
+    text-align: center;
 
+    img {
+      width: 155px;
+
+      @include respond-to(xsmall) {
+        width: 195px;
+      }
+
+      @include respond-to(medium) {
+        width: 150px;
+      }
+    }
+  }
+
+  .menu {
+    margin: 0;
+    order: 0;
+
+    nav {
+      display: none;
+    }
+  }
+
+  .search {
+    order: 2;
+
+    input {
+      display: none;
+    }
+  }
+
+  .user {
+    display: none;
+    order: 3;
   }
 }
