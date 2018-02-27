@@ -12,19 +12,19 @@
     max-width: 600px;
     min-height: 1px;
     overflow: hidden;
-    position: relative;
 
     figure {
       line-height: 0;
       margin: 0;
       overflow: hidden;
       padding: 0;
+      transform: translateZ(0);
 
       img {
+        backface-visibility: hidden;
         position: relative;
         transition: $default-transtion;
         transition-duration: .5s;
-        transform: translateZ(0);
       }
     }
 
