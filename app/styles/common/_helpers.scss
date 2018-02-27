@@ -8,3 +8,9 @@
   position: absolute;
   width: 1px;
 }
+
+.img-fluid,
+.post img {
+  max-width: 100%;
+  height: auto;
+}

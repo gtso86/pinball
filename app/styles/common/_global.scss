@@ -1,5 +1,7 @@
 // Global box-sizing
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: inherit;
 }
 
@@ -8,12 +10,16 @@ html {
 }
 
 body {
-  background: $body-background;
+  background: $white;
   font-family: $sans;
   margin: 0;
   padding: 0;
+  @include respond-to(medium) {
+    background: $body-background;
+  }
 }
 
+// Layout twaaks
 .wrapper {
   overflow-x: hidden; // avoid horizontal scrolls created by large elements
 }
@@ -21,26 +27,20 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-
   @include respond-to(xsmall) {
     // max-width: #{inspect(map-get($breakpoints-sizes, xsmall))};
     padding: 0 40px;
   }
-
   @include respond-to(small) {
     max-width: #{inspect(map-get($breakpoints-sizes, small))};
   }
-
   @include respond-to(medium) {
     max-width: inherit;
   }
-
   @include respond-to(large) {
     max-width: #{inspect(map-get($breakpoints-sizes, large))};
   }
-
   @include respond-to(xlarge) {
     max-width: #{inspect(map-get($breakpoints-sizes, xlarge))};
   }
 }
-

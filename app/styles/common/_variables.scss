@@ -1,6 +1,7 @@
 // Colors
 $white: #FFF;
 $gray: #F0EFEE;
+$dark-gray: #BBB;
 $black: #000;
 
 // Fonts
@@ -23,7 +24,16 @@ $breakpoints: (
   'xlarge' : ( min-width: #{inspect(map-get($breakpoints-sizes, xlarge))} )
 );
 
+// Layouts sizes
+$gutter: 20px;
+
 // Element pallete
 $header-background: $white;
 
 $body-background: $gray;
+
+$fill-button: $dark-gray;
+$fill-button-hover: darken($dark-gray, 50%);
+
+// Animations
+$default-transtion: all .3s ease;
