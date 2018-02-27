@@ -11,11 +11,24 @@ html {
 
 body {
   background: $white;
+  color: $text-fill;
   font-family: $sans;
   margin: 0;
   padding: 0;
+
   @include respond-to(medium) {
     background: $body-background;
+  }
+}
+
+a {
+  color: $text-fill;
+  text-decoration-color: transparent;
+  transition: $default-transtion;
+
+  &:hover {
+    color: darken($text-fill, 50%);
+    text-decoration-color: darken($text-fill, 50%);
   }
 }
 
@@ -28,14 +41,13 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   @include respond-to(xsmall) {
-    // max-width: #{inspect(map-get($breakpoints-sizes, xsmall))};
-    padding: 0 40px;
   }
   @include respond-to(small) {
     max-width: #{inspect(map-get($breakpoints-sizes, small))};
   }
   @include respond-to(medium) {
     max-width: inherit;
+    padding: 0 30px;
   }
   @include respond-to(large) {
     max-width: #{inspect(map-get($breakpoints-sizes, large))};
