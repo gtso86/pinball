@@ -40,19 +40,25 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 20px;
+
   @include respond-to(xsmall) {
   }
+
   @include respond-to(small) {
     max-width: #{inspect(map-get($breakpoints-sizes, small))};
   }
+
   @include respond-to(medium) {
     max-width: inherit;
     padding: 0 30px;
   }
+
   @include respond-to(large) {
     max-width: #{inspect(map-get($breakpoints-sizes, large))};
   }
-  @include respond-to(xlarge) {
-    max-width: #{inspect(map-get($breakpoints-sizes, xlarge))};
-  }
+
+  // Uncomment to enable larger resolutions
+  // @include respond-to(xlarge) {
+  //   max-width: #{inspect(map-get($breakpoints-sizes, xlarge))};
+  // }
 }
